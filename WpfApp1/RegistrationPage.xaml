@@ -1,0 +1,41 @@
+﻿<Page x:Class="WpfApp1.RegistrationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="600"
+      Title="RegistrationPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="0.80*"/>
+            <ColumnDefinition Width="0.1*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1" Orientation="Vertical">
+            <Image Source="resources/profile2.png" Width="150" Height="150"/>
+            <local:UserTextbox title="name" Margin="100,0,100,10"/>
+            <local:UserTextbox title="mobile" Margin="100,10"/>
+            <local:UserTextbox title="email" Margin="100,10"/>
+            <local:UserTextbox title="username" Margin="100,10"/>
+            <local:UserTextbox title="password" Margin="100,10" Text="******"/>
+            <local:UserTextbox title="enter your password again" Text="******" Margin="100,10"/>
+            <Grid   Margin="100,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Button Content="register" Grid.Column="0" Width="100" Padding="5"/>
+                <Button Content="cancel" Grid.Column="1" Width="100" Padding="5"/>
+            </Grid>
+
+            <Label  HorizontalAlignment="Center">
+                <Hyperlink Click="Hyperlink_Click">
+                    have account click here to login
+                </Hyperlink>
+            </Label>
+        </StackPanel>
+    </Grid>
+</Page>
