@@ -21,16 +21,7 @@ namespace WpfApp1.DatabaseHandler
         //private string limit = "100", offset = "0";
         private const string _Name = "Name", _Family = "Family", _Tel1 = "Tel1", _Tel2 = "Tel2",
             _Label1 = "Label1", _Label2 = "Label2", _Eshterak = "Eshterak", _AddressCode = "AddressCode", _TableName = "gdb.Moshtarak";
-        //private readonly string createTableQuery = "CREATE TABLE if not exists {0} ({1} VARCHAR(50),{2} VARCHAR(50),{3} VARCHAR(50)," +
-        //        "{4} VARCHAR(50),{5} VARCHAR(50),{6} VARCHAR(50),{7} VARCHAR(50),{8} VARCHAR(50))",
-        //    insertQuery = "INSERT INTO {0} ({1},{2},{3},{4},{5},{6},{7},{15}) VALUES ('{8}',{9},{10},'{11}','{12}','{13}','{14}','{16}')",
-        //    updateQuery = "UPDATE {0} SET {1}={8},{2}='{9}',{3}='{10}',{4}='{11}',{5}='{12}',{6}='{13}',{7}='{14}' WHERE {15}={16}",
-        //    deleteQuery = "DELETE FROM {0} WHERE {1}={2}",
-        //    countQuery = "SELECT COUNT(*) FROM {0}  WHERE {1} LIKE '%{2}%' AND {3} LIKE '%{4}%' AND {5} LIKE '%{6}%' " +
-        //    "AND {7} LIKE '%{8}%' AND {9} LIKE '%{10}%' AND {11} LIKE '%{12}%' AND {13} LIKE '%{14}%' AND {15} LIKE '%{16}%'",
-        //    //selectQuery = "SELECT * FROM {0} ORDER BY {1} ASC LIMIT {2} OFFSET {3}",
-        //    searchQuery = "SELECT * FROM {0} WHERE {4} LIKE '%{5}%' AND {6} LIKE '%{7}%' AND {8} LIKE '%{9}%' AND {10} LIKE '%{11}%' AND {12} LIKE '%{13}%' AND {14} LIKE '%{15}%' AND {16} LIKE '%{17}%' AND {18} LIKE '%{19}%' " +
-        //    "ORDER BY {1} ASC LIMIT {2} OFFSET {3}";
+       
         private string message = "";
         private MyDatabase database;
         public MoshtarakDbHandler(MyDatabase database)
